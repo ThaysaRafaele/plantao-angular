@@ -1,5 +1,5 @@
 {
-  "name": "plantao-angular",
+  "name": "tarefas-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:plantao-angular": "node dist/plantao-angular/server/server.mjs"
+    "serve:ssr:tarefas-angular": "node dist/tarefas-angular/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@12.0.2",

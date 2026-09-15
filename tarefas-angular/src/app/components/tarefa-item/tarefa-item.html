@@ -1,0 +1,7 @@
+<div *ngFor="let tarefa of tarefaService.tarefas" [class.concluida-div]="tarefa.concluida">
+    <p [class.concluida]="tarefa.concluida">{{ tarefa.titulo }}</p>
+    <p *ngIf="tarefa.concluida">Concluida</p>
+    <button (click)="tarefaService.marcarConcluida(tarefa)">
+        {{ tarefa.concluida ? 'Desfazer' : 'Concluir' }}
+    </button>
+</div>

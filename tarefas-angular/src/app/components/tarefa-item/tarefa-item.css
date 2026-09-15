@@ -1,0 +1,60 @@
+/* container geral */
+:host {
+  display: block;
+  max-width: 500px;
+  margin: 32px auto;
+  font-family: sans-serif;
+}
+
+/* cada tarefa */
+div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border-left: 4px solid #7c3aed;
+}
+
+/* texto da tarefa */
+p:first-child {
+  flex: 1;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* "Concluida" */
+p:nth-child(2) {
+  margin: 0;
+  font-size: 12px;
+  color: #7c3aed;
+}
+
+/* Cor de fundo da div "Concluida" */
+.concluida-div {
+  background: #dcfce7;
+  border-left-color: #16a34a;
+}
+
+/* botão */
+button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #7c3aed;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #6d28d9;
+}
+
+/* tarefa concluída */
+.concluida {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
