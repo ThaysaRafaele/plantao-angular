@@ -9,5 +9,7 @@ import { Tarefas } from '../../services/tarefas';
   templateUrl: './tarefa-item.html',
 })
 export class TarefaItem {
-  constructor(public tarefaService: Tarefas) {}
+    constructor(public tarefaService: Tarefas) {
+  }
+
 }

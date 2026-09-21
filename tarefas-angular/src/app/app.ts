@@ -1,10 +1,8 @@
-import { Component, signal } from '@angular/core';
-import { TarefaItem } from './components/tarefa-item/tarefa-item';
-import { CommonModule } from '@angular/common';
-
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [TarefaItem, CommonModule],
+  imports: [ RouterOutlet, RouterLink],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
