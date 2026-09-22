@@ -1,0 +1,25 @@
+.detalhe {
+  max-width: 500px;
+  margin: 32px auto;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border-left: 4px solid #7c3aed;
+  font-family: sans-serif;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #7c3aed;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background-color 0.15s ease;
+}
+
+.voltar:hover {
+  background: #6d28d9;
+}

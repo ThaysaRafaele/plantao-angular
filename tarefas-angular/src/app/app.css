@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1.5rem;
+  background: #7c3aed;
+  font-family: sans-serif;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+nav a.ativo {
+  background: #ede9fe;
+  color: #7c3aed;
+}
