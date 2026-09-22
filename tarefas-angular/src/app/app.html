@@ -1,6 +1,6 @@
 <nav>
-    <a routerLink="/">Lista de Tarefas</a>
-    <a routerLink="/nova-tarefa">Nova Tarefa</a>
+    <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}">Lista de Tarefas</a>
+    <a routerLink="/nova-tarefa" routerLinkActive="ativo">Nova Tarefa</a>
 </nav>
 <router-outlet></router-outlet>
 

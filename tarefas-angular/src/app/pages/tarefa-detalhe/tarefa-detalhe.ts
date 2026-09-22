@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   imports: [],
@@ -6,4 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './tarefa-detalhe.css',
   templateUrl: './tarefa-detalhe.html',
 })
-export class TarefaDetalhe {}
+export class TarefaDetalhe {
+
+  id: string | null = null;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.id = this.route.snapshot.paramMap.get('id');
+  }
+}

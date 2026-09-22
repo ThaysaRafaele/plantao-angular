@@ -1,5 +1,5 @@
-<div *ngFor="let tarefa of tarefaService.tarefas" [class.concluida-div]="tarefa.concluida">
-    <p [class.concluida]="tarefa.concluida">{{ tarefa.titulo }}</p>
+<div *ngFor="let tarefa of tarefaService.tarefas; let i = index" [class.concluida-div]="tarefa.concluida">
+    <a [routerLink]="['/tarefa', i]"><p [class.concluida]="tarefa.concluida">{{ tarefa.titulo }}</p></a>
     <p *ngIf="tarefa.concluida">Concluida</p>
     <button (click)="tarefaService.marcarConcluida(tarefa)">
         {{ tarefa.concluida ? 'Desfazer' : 'Concluir' }}
