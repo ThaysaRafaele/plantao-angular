@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-tarefa-detalhe',
   styleUrl: './tarefa-detalhe.css',
   templateUrl: './tarefa-detalhe.html',
